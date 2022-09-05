@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
 
 * {
   margin: 0;
@@ -9,7 +9,6 @@
 
 body,
 html {
-  max-width: 2048px;
   background-color: #eeeded;
   scroll-behavior: smooth;
 }
@@ -40,7 +39,7 @@ html {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    font-family: roboto;
+    font-family: 'Roboto';
     list-style: none;
     width: 100%;
     display: flex;
@@ -89,7 +88,7 @@ html {
   section h2 {
     font-size: 3vw;
     text-align: center;
-    font-family: 'Secular One', sans-serif;
+    font-family: "Secular One", sans-serif;
   }
 
   /* Section */
@@ -112,26 +111,22 @@ html {
     margin: 5vw;
     max-width: 70vw;
     max-height: 50vw;
-    position: relative;
     border-radius: 5%;
   }
 
   #videoyt {
     display: flex;
     width: 70vw;
-    margin: 5vw;
-    max-width: 70vw;
+    margin-top: 5vw;
     max-height: 50vw;
-    position: relative;
     border-radius: 5%;
   }
 
   /* footer */
   .footer {
     width: 100%;
-    max-width: 100%;
     height: 40%;
-    top: 335vw;
+    top: 360vw;
     background-color: #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     position: absolute;
@@ -175,7 +170,7 @@ html {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    font-family: roboto;
+    font-family: 'Roboto';
     list-style: none;
     width: 100%;
     display: flex;
@@ -214,17 +209,16 @@ html {
 
   main {
     max-width: 100%;
-    height: 150vw;
+    height: 110vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  section h2 {
-    font-size: 3vw;
-    text-align: center;
-    font-family: 'Secular One', sans-serif;
+  .background {
+    display: contents;
+    
   }
 
   /* Section */
@@ -237,7 +231,13 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 6%;
+    
+  }
+
+  section h2 {
+    font-size: 3vw;
+    text-align: center;
+    font-family: "Secular One", sans-serif;
   }
 
   .fotos {
@@ -251,17 +251,15 @@ html {
     margin: 5vw;
     max-width: 70vw;
     max-height: 50vw;
-    position: relative;
     border-radius: 5%;
   }
 
   #videoyt {
     display: flex;
     width: 70vw;
-    margin: 5vw;
+    margin: 3vw;
     max-width: 70vw;
     max-height: 50vw;
-    position: relative;
     border-radius: 5%;
   }
 
@@ -280,7 +278,7 @@ html {
     justify-content: space-around;
   }
 
-   .footer .linkedin,
+  .footer .linkedin,
   .git {
     max-width: 30%;
     max-height: 30%;
@@ -310,7 +308,7 @@ html {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    font-family: roboto;
+    font-family: 'Roboto';
     list-style: none;
     width: 100%;
     display: flex;
@@ -354,17 +352,20 @@ html {
   main {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
   }
 
-  section h2 {
-    font-size: 2vw;
-    text-align: center;
-    font-family: 'Secular One', sans-serif;
-    padding-top: 5vw ;
+  .background {
+    display: flex;
+    height: 40vw;
   }
 
+  .banner {
+    width: 100%;
+    background-repeat: round;
+    background-image: url(../IMG/19078_orla-noturna-tadeu-nascimento.png);
+  }
+  
   /* Section */
 
   section {
@@ -375,7 +376,13 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 6%;
+    margin-top: 5vw;
+  }
+
+  section h2 {
+    font-size: 2vw;
+    text-align: center;
+    font-family: "Secular One", sans-serif;
   }
 
   .fotos {
@@ -390,16 +397,14 @@ html {
     margin: 2vw;
     max-width: 25vw;
     max-height: 50vw;
-    position: relative;
     border-radius: 5%;
   }
 
   #videoyt {
     width: 70vw;
-    margin-top: 5vw;
+    margin-top: 2vw;
     max-width: 70vw;
     max-height: 50vw;
-    position: relative;
     border-radius: 5%;
   }
 
@@ -408,7 +413,7 @@ html {
     width: 100%;
     max-width: 100%;
     height: 30%;
-    top: 100vw;
+    top: 130vw;
     background-color: #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     position: absolute;
@@ -418,12 +423,10 @@ html {
     justify-content: space-around;
   }
 
-   .footer .linkedin,
+  .footer .linkedin,
   .git {
     max-width: 30%;
     max-height: 30%;
     border-radius: 50%;
   }
-
-
 }
