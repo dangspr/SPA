@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
 * {
   margin: 0;
@@ -6,23 +7,20 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body,
 html {
   max-width: 2048px;
   background-color: #eeeded;
+  scroll-behavior: smooth;
 }
 
-@media (min-width: 280px) and (max-width: 1023px) {
+@media (min-width: 280px) and (max-width: 819px) {
   /* header */
   header {
     width: 100%;
     max-width: 100%;
     height: 43%;
-    background-color: #c4c4c4;
+    background-color: #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     position: absolute;
     display: flex;
@@ -47,7 +45,7 @@ html {
     width: 100%;
     display: flex;
     justify-content: center;
-    font-size: 2.5vw;
+    font-size: 2.1vw;
   }
 
   .d1,
@@ -55,7 +53,7 @@ html {
   .d3 {
     margin: 10%;
     border: 2vh solid grey;
-    border-radius: 10%;
+    border-radius: 5%;
     background-color: grey;
     transition: 1s;
     cursor: pointer;
@@ -71,7 +69,7 @@ html {
 
   nav {
     max-width: 30%;
-      }
+  }
 
   .d1 > a:hover,
   .d2 > a:hover,
@@ -88,9 +86,10 @@ html {
     justify-content: center;
   }
 
-  main h2 {
-    font-size: 4vw;
+  section h2 {
+    font-size: 3vw;
     text-align: center;
+    font-family: 'Secular One', sans-serif;
   }
 
   /* Section */
@@ -110,15 +109,13 @@ html {
   .foto2,
   .foto3 {
     display: flex;
-    width: 70vw;
     margin: 5vw;
     max-width: 70vw;
     max-height: 50vw;
     position: relative;
-    border-radius: 10%;
+    border-radius: 5%;
   }
 
- 
   #videoyt {
     display: flex;
     width: 70vw;
@@ -126,16 +123,16 @@ html {
     max-width: 70vw;
     max-height: 50vw;
     position: relative;
-    border-radius: 10%;
+    border-radius: 5%;
   }
 
   /* footer */
-  footer {
+  .footer {
     width: 100%;
     max-width: 100%;
-    height: 60%;
-    top: 350vw;
-    background-color: #c4c4c4;
+    height: 40%;
+    top: 335vw;
+    background-color: #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     position: absolute;
     display: flex;
@@ -143,27 +140,171 @@ html {
     align-items: center;
     justify-content: space-around;
   }
+
+  .footer .linkedin,
+  .git {
+    max-width: 30%;
+    max-height: 30%;
+    border-radius: 50%;
+  }
 }
 
-/* Media Query */
+@media (min-width: 820px) and (max-width: 1023px) {
+  /* header */
+  header {
+    width: 100%;
+    max-width: 100%;
+    height: 43%;
+    background-color: #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  header .logo {
+    max-width: 30%;
+    max-height: 30%;
+  }
+
+  /* Nav */
+
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: roboto;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5vw;
+  }
+
+  .d1,
+  .d2,
+  .d3 {
+    margin: 10%;
+    border: 2vh solid grey;
+    border-radius: 5%;
+    background-color: grey;
+    transition: 1s;
+    cursor: pointer;
+  }
+
+  .d1:hover,
+  .d2:hover,
+  .d3:hover {
+    border: 1.5vh solid rgb(194, 194, 194);
+    background-color: rgb(194, 194, 194);
+    transition: 0.1s;
+  }
+
+  nav {
+    max-width: 30%;
+  }
+
+  .d1 > a:hover,
+  .d2 > a:hover,
+  .d3 > a:hover {
+    color: #08f10c;
+  }
+
+  main {
+    max-width: 100%;
+    height: 150vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section h2 {
+    font-size: 3vw;
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+  }
+
+  /* Section */
+
+  section {
+    width: 100%;
+    max-width: 100%;
+    height: 15vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 6%;
+  }
+
+  .fotos {
+    display: flex;
+    flex-direction: column;
+  }
+  .foto1,
+  .foto2,
+  .foto3 {
+    display: flex;
+    margin: 5vw;
+    max-width: 70vw;
+    max-height: 50vw;
+    position: relative;
+    border-radius: 5%;
+  }
+
+  #videoyt {
+    display: flex;
+    width: 70vw;
+    margin: 5vw;
+    max-width: 70vw;
+    max-height: 50vw;
+    position: relative;
+    border-radius: 5%;
+  }
+
+  /* footer */
+  .footer {
+    width: 100%;
+    max-width: 100%;
+    height: 40%;
+    top: 310vw;
+    background-color: #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+   .footer .linkedin,
+  .git {
+    max-width: 30%;
+    max-height: 30%;
+    border-radius: 50%;
+  }
+}
 
 @media (min-width: 1024px) {
   header {
     width: 100%;
     max-width: 100%;
-    height: 43%;
-    background-color: #c4c4c4;
+    height: 10%;
+    background-color: #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    position: absolute;
+    position: fixed;
     display: flex;
-    /* flex-direction: row; */
+    z-index: 10;
     align-items: center;
     justify-content: space-evenly;
   }
 
   header .logo {
-    max-width: 30%;
-    max-height: 60%;
+    max-width: 80%;
+    max-height: 80%;
   }
   nav a {
     color: #ffffff;
@@ -181,8 +322,8 @@ html {
   .d2,
   .d3 {
     margin: 3%;
-    border: 2vh solid grey;
-    border-radius: 10%;
+    border: 1.2vh solid grey;
+    border-radius: 5%;
     background-color: grey;
     transition: 1s;
     cursor: pointer;
@@ -192,7 +333,7 @@ html {
   .d1:hover,
   .d2:hover,
   .d3:hover {
-    border: 1.5vh solid rgb(194, 194, 194);
+    border: 1.3vh solid rgb(194, 194, 194);
     background-color: rgb(194, 194, 194);
     transition: 0.1s;
   }
@@ -211,17 +352,17 @@ html {
   }
 
   main {
-    max-width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  main h2 {
-    font-size: 3vw;
+  section h2 {
+    font-size: 2vw;
     text-align: center;
+    font-family: 'Secular One', sans-serif;
+    padding-top: 5vw ;
   }
 
   /* Section */
@@ -237,42 +378,52 @@ html {
     margin-top: 6%;
   }
 
+  .fotos {
+    display: flex;
+    flex-direction: row;
+  }
+
   .foto1,
   .foto2,
   .foto3 {
     display: flex;
-    width: 70vw;
-    margin: 5vw;
-    max-width: 70vw;
+    margin: 2vw;
+    max-width: 25vw;
     max-height: 50vw;
     position: relative;
-    border-radius: 10%;
+    border-radius: 5%;
   }
 
-  
   #videoyt {
-    display: flex;
     width: 70vw;
-    margin: 5vw;
+    margin-top: 5vw;
     max-width: 70vw;
     max-height: 50vw;
     position: relative;
-    border-radius: 10%;
+    border-radius: 5%;
   }
 
   /* footer */
-  footer {
+  .footer {
     width: 100%;
     max-width: 100%;
-    height: 60%;
-    top: 350vw;
-    background-color: #c4c4c4;
+    height: 30%;
+    top: 100vw;
+    background-color: #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     position: absolute;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
   }
-}
 
+   .footer .linkedin,
+  .git {
+    max-width: 30%;
+    max-height: 30%;
+    border-radius: 50%;
+  }
+
+
+}
