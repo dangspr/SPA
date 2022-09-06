@@ -39,7 +39,7 @@ html {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     list-style: none;
     width: 100%;
     display: flex;
@@ -170,7 +170,7 @@ html {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     list-style: none;
     width: 100%;
     display: flex;
@@ -218,7 +218,6 @@ html {
 
   .background {
     display: contents;
-    
   }
 
   /* Section */
@@ -231,7 +230,6 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
   }
 
   section h2 {
@@ -308,7 +306,7 @@ html {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     list-style: none;
     width: 100%;
     display: flex;
@@ -350,6 +348,7 @@ html {
   }
 
   main {
+    background: #000000;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -363,9 +362,10 @@ html {
   .banner {
     width: 100%;
     background-repeat: round;
+    border-radius: 1%;
     background-image: url(../IMG/19078_orla-noturna-tadeu-nascimento.png);
   }
-  
+
   /* Section */
 
   section {
@@ -385,6 +385,10 @@ html {
     font-family: "Secular One", sans-serif;
   }
 
+  section #Curiosidades {
+    color: #eeeded;
+  }
+
   .fotos {
     display: flex;
     flex-direction: row;
@@ -398,6 +402,11 @@ html {
     max-width: 25vw;
     max-height: 50vw;
     border-radius: 5%;
+  }
+
+  section #video {
+    color: #000000;
+    background-color: #000000;
   }
 
   #videoyt {
